@@ -38,8 +38,9 @@ class CodeCustomCell: UITableViewCell{
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(style: .default, reuseIdentifier: "CellIDForCodeCustomCell")
-        // fatalError("init(coder:) has not been implemented")
+        // super.init(style: .default, reuseIdentifier: "CellIDForCodeCustomCell")
+        // This class's Designated Initializer has been override above. So this initailizer won't be called actually.
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
